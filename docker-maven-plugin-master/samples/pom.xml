@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--
+  samples aggregator
+  -->
+  <parent>
+    <groupId>io.fabric8.dmp</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.41.0-SNAPSHOT</version>
+    <relativePath>../parent/pom.xml</relativePath>
+  </parent>
+
+  <groupId>io.fabric8.dmp.samples</groupId>
+  <artifactId>dmp-sample-parent</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>build-cache</module>
+    <module>cargo-jolokia</module>
+    <module>copy-from-container</module>
+    <module>custom-net</module>
+    <module>data-jolokia</module>
+    <module>docker-compose</module>
+    <module>dockerfile</module>
+    <module>dockerignore</module>
+    <module>healthcheck</module>
+    <module>helloworld</module>
+    <module>log</module>
+    <module>multi-architecture</module>
+    <module>multi-assembly</module>
+    <module>multi-wait</module>
+    <module>net</module>
+    <module>properties</module>
+    <module>run-java</module>
+    <module>smallest</module>
+    <module>spring-boot-with-jib</module>
+    <module>volume</module>
+    <module>zero-config</module>
+  </modules>
+
+  <properties>
+    <latest-released-version>0.40.1</latest-released-version>
+  </properties>
+
+  <build>
+    <pluginManagement>
+
+      <plugins>
+        <plugin>
+          <groupId>io.fabric8</groupId>
+          <artifactId>docker-maven-plugin</artifactId>
+          <version>${latest-released-version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

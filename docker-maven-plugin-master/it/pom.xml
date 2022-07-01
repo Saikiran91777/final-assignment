@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.fabric8.dmp</groupId>
+    <artifactId>parent</artifactId>
+    <version>0.41.0-SNAPSHOT</version>
+    <relativePath>../parent/pom.xml</relativePath>
+  </parent>
+
+  <!--
+  Integration tests aggregator
+  -->
+
+  <groupId>io.fabric8.dmp.itests</groupId>
+  <artifactId>dmp-it-parent</artifactId>
+  <version>0.41.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>builder</module>
+    <module>buildx</module>
+    <module>buildx-contextdir</module>
+    <module>buildx-dependencyset</module>
+    <module>buildx-dockerfile</module>
+    <module>docker-compose</module>
+    <module>dockerfile</module>
+    <module>dockerignore</module>
+    <module>healthcheck</module>
+    <module>helloworld</module>
+    <module>log</module>
+    <module>multi-assembly</module>
+    <module>net</module>
+    <module>properties</module>
+    <module>run-java</module>
+    <module>smallest</module>
+    <module>spring-boot-with-jib</module>
+    <module>volume</module>
+    <module>zero-config</module>
+  </modules>
+</project>
